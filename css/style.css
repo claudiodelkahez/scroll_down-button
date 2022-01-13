@@ -2,7 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 html {
     font-size: 62.5%;
+}
+section {
+    height: 100vh;
+    position: relative;
+}
+
+#section-1 {
+    background-image: linear-gradient(to bottom, #4b4483, #455782);
+}
+
+a#scroll-btn {
+    position: absolute;
+    height: 10em;
+    width: 6.25em;
+    border: 0.5em solid white;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 6.25em;
+    border-radius: 3em;
+}
+
+
+a#scroll-btn::before {
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 1.2em;
+    width: 1.2em;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
 }
